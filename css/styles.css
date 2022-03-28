@@ -341,14 +341,24 @@ a.member_contact {
   transform: scale(1.1);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
+.contact_social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 social a {
   text-decoration: none;
 }
+social p {
+  color: #424242;
+  font-family: "Product Sans", sans-serif;
+  font-weight: bold;
+}
 
 .fa {
-  font-size: xx-small !important;
-  padding: 8px;
-  font-size: 10px;
+  font-size: large !important;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   transition: all 0.5s ease;
@@ -360,16 +370,16 @@ social a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   transform: scale(1.05);
 }
-.fa-twitter {
+.fa-phone {
   background: #55acee;
   color: white;
 }
-.fa-instagram {
+.fa-comment {
   background: #125688;
   color: white;
 }
 
-.fa-dribbble {
+.fa-globe {
   background: #ea4c89;
   color: white;
 }
@@ -388,8 +398,14 @@ social a {
   padding: 50px;
   text-align: center;
   margin: auto;
-  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  width: 80%;
+  border-color: #f1f1f1;
+  border-style: solid;
+  border-width: 5px;
+  box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
+
 .contact_section a:link {
   text-decoration: none;
 }
@@ -398,10 +414,22 @@ social a {
   font-size: 2em;
   color: #212121;
   text-align: center;
-  vertical-align: top;
-  text-transform: capitalize;
 }
-.contact_form {
+.contact_section form {
+  width: 80%;
+  margin: auto;
+}
+.fname-lname {
+  display: flex;
+  flex-direction: row;
+}
+.contact_section_email {
+  display: flex;
+  flex-direction: row;
+}
+.contact_section_message {
+  display: flex;
+  flex-direction: row;
 }
 
 input[type="text"],
@@ -410,27 +438,28 @@ textarea {
   width: 100%;
   padding: 10px;
   border: 5px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   resize: vertical;
   font-family: "Product Sans", sans-serif;
 }
 
 input[type="submit"] {
-  background-color: #004f7d;
+  background-color: #212121;
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 20px;
   font-size: medium;
   font-weight: bolder;
   font-family: "Product Sans", sans-serif;
-  width: 30%;
+  width: 50%;
+  margin-top: 10px;
 }
 
 input[type="submit"]:hover {
-  background-color: #00ade5;
+  background-color: #616166;
 }
 footer {
   display: block;
@@ -504,7 +533,7 @@ ol.contributors_list li a:hover {
     width: 80%;
   }
   input[type="submit"] {
-    width: 30%;
+    width: 50%;
   }
 }
 
@@ -549,17 +578,25 @@ ol.contributors_list li a:hover {
   }
   .contact_section {
     padding: 20px;
-
+    margin: auto;
     text-align: center;
   }
-
+  .contact_social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .fname-lname {
+    display: flex;
+    flex-direction: column;
+  }
   input[type="text"],
   select,
   textarea {
     width: 80%;
   }
   input[type="submit"] {
-    width: 30%;
+    width: 100%;
   }
   ul.header-menu li {
     font-size: small;
@@ -572,12 +609,12 @@ ol.contributors_list li a:hover {
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .banner {
-    padding-top: 20%;
+    padding-top: 40%;
   }
 
   .banner_name {
     font-size: 2em;
-    color: #fff;
+    color: #616161;
   }
   .logo {
     display: none;
@@ -631,10 +668,17 @@ ol.contributors_list li a:hover {
   }
 
   .contact_section {
-    padding: 10px;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin: auto;
     text-align: center;
+  }
+  .contact_social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .fname-lname {
+    display: flex;
+    flex-direction: column;
   }
   input[type="text"],
   select,
@@ -642,7 +686,7 @@ ol.contributors_list li a:hover {
     width: 80%;
   }
   input[type="submit"] {
-    width: 30%;
+    width: 100%;
   }
   ol.contributors_list {
     column-count: 1;

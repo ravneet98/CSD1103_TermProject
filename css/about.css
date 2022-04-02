@@ -1,11 +1,12 @@
 .about{
     width: 100%;
     padding: 78px 0px;
-    background-color: #212121;
+    background-color: #fff;
 }
 .about img{
     height: auto;
     width: 420px;
+    border-radius:50%;
 }
 
 .about-text{
@@ -20,28 +21,56 @@
     justify-content: space-around;
 }
 .about-text h1{
-    color: aliceblue;
+    color: black;
     font-size: 80px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
 .about-text h5{
-    color: white;
+    color: black;
     font-size: 25px;
     text-transform: capitalize;
     margin-bottom: 25px;
     letter-spacing: 2px;
 }
 span{
-    color: red;
+    color: #424242;
 }
 .about-text p{
-    color: aquamarine;
+    color: black;
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
 }
+.lets_talk {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px;
+    border: 0;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .lets_talk a {
+    font-family: "Product Sans", sans-serif;
+    font-size: small;
+    font-weight: bold;
+    color: #424242;
+    text-decoration: none;
+  }
+  
+  .lets_talk:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
+  
 button{
     background: #f9004d;
     color: white;

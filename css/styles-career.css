@@ -1,0 +1,51 @@
+section.career_main{
+  padding: 2rem 1rem;
+  background: aliceblue;
+}
+
+.career_main h2{
+  font-size: 40px;
+  color: #12a9e0;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.career_inner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0;
+}
+.career_inner article{
+  width: 30%;
+    background-color: white;
+    margin: 0.55em;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 0;
+    transition: all 0.5s ease;
+}
+.career_inner article a{
+  text-decoration: none;
+}
+.career_name{
+    color: #12a9e0;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 400;
+}
+.career_category{
+  color: black;
+}
+.career_location{
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  }
+
+@media screen and (min-width: 480px) and (max-width: 900px) {
+  }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+}

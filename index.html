@@ -15,6 +15,7 @@
 
 </head>
 <body>
+    <header>
     <nav>
         <div>
         <img class="logo" src="images/logo.png" alt="logo">
@@ -22,13 +23,14 @@
         </div>
         <ul class="header-menu">
             <li><a href="#">Services </a></li>
-            <li><a href="#">About Us </a></li>
+            <li><a href="about.html">About Us </a></li>
             <li><a href="#">Careers </a></li>
             <li><a href="#"><span class="our_work">Our Work</span></a></li>
            
         </ul>
             </nav>
- 
+ </header>
+ <main>
     <div id="banner">
         <div class="banner">
             <div class ='heading'>WE CODE &lt;/&gt;.</div>
@@ -38,7 +40,7 @@
             
         </div>
     </div>
-    <section>
+    <section class="section_about_us">
 <div id="about_us" class="about_us">
     <div>
         <h3>ABOUT US</h3>
@@ -47,7 +49,7 @@
                 <div class="inner_text">We build software using an agile, iterative development method. Instead of diving straight into coding, we start with
                 in-depth design and strategy session that helps us make projects more cost effective, and helps us build the right
                 thing, every time. Once that’s done, the coding magic begins!</div>
-             
+           
             </article>
             
         </div>
@@ -74,103 +76,30 @@
             </div>
     </section>
 
-   <!-- <section id="contributors" class="contributors">
-        <div class="team_member_section">
-            <h3>Developers</h3>        
-                <div class="member_list">
-                    <!-- C0846714 Ravneet Singh
-                    <article>
-                            <img class="member_img" src="images/ravneet.JPG" alt="ravneet">
-                            <h2><a href="#" class="member_name">Ravneet Singh</a></h2>
-                            <div class="designation">Lorem ipsum dolor sit amet, consectetur</div>
-                            <div class="education">Lambton College</div>
-                            <social>
-                                <a href="#" class="fa fa-instagram"></a> 
-                                <a href="#" class="fa fa-facebook"></a>
-                                <a href="#" class="fa fa-twitter"></a>
-                                <a href="#" class="fa fa-dribbble"></a>
-                            </social>
-                            <a href="#" class="member_contact">Contact</a>
-                        
-                    </article>
-                    <!-- C0855984  Gagan
-                    <article>
-                        <img class="member_img" src="images/gagan.jpeg" alt="gagan">
-                        <h2><a href="#" class="member_name">Gagan</a></h2>
-                        <div class="designation">Fusce interdum turpis sed sagittis rutrum</div>
-                        <div class="education">Lambton College</div>
-                        <social>
-                            <a href="#" class="fa fa-instagram"></a> 
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-dribbble"></a>
-                        </social>
-                        <a href="#" class="member_contact">Contact</a>
-                    </article>
-                    <!-- C0850114 Kruti
-                    <article>
-                        <img class="member_img" src="images/kruti.jpeg" alt="kruti">
-                        <h2><a href="#" class="member_name">Kruti Patel</a></h2>
-                        <div class="designation">Donec tincidunt tortor vel posuere mollis</div>
-                        <div class="education">Lambton College</div>
-                        <social>
-                            <a href="#" class="fa fa-instagram"></a> 
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-dribbble"></a> 
-                        </social>
-                        <a href="#" class="member_contact">Contact</a>
-                    </article>
-                    <!-- C0855527  Sesha Satya Sathakarni Peddinti 
-                    <article>
-                        <img class="member_img" src="images/satya.jpeg" alt="satya">
-                        <h2><a href="#" class="member_name">Satya</a></h2>
-                        <div class="designation">Cras rhoncus ligula non sapien mollis tristique</div>
-                        <div class="education">Lambton College</div>
-                        <social>
-                            <a href="#" class="fa fa-instagram"></a> 
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-dribbble"></a>
-                        </social>
-                        <a href="#" class="member_contact">Contact</a>
-                        
-                    </article>
-                   <!-- C0849774 Prabhjot Kaur   
-                    <article>
-                        <img class="member_img" src="images/prabh.jpeg" alt="prabh">
-                        <h2><a href="#" class="member_name">Prabhjot Kaur</a></h2>
-                        <div class="designation">Class aptent taciti sociosqu ad litora torquent per</div>
-                        <div class="education">Lambton College</div>
-                        <social>
-                            <a href="#" class="fa fa-instagram"></a> 
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-dribbble"></a> 
-                        </social>
-                        <a href="#" class="member_contact">Contact</a>
-                    </article>
-                </div>
-        </div>
-    </section>-->
+  
 
-<section id="contact_section" >
-    <div class="contact_section">
-        <a href="contact_section">
+<section>
+    <div id="contact_section" class="contact_section">
+       
             <h3>CONTACT US</h3>
         </a>
         <div >
         <social class="contact_social">
             <div>
+               
             <a href="#" class="fa fa-phone"></a>
+            <p>Call Us</p>
             <p>+1 123-456-7890</p>
             </div>
             <div>
             <a href="#" class="fa fa-comment"></a>
+            <p>Mail Us</p>
             <p>consultancy@lambton.ca</p>
             </div>
             <div>
+               
             <a href="#" class="fa fa-globe"></a>
+            <p>Locate Us</p>
             <p>Toronto, ON, Canada</p>
             </div>
            
@@ -184,20 +113,41 @@
                     &nbsp; &nbsp;
                 </div>
                 <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                <div>
+                    &nbsp; &nbsp;
                 </div>
-                <div class="contact_section_email">
                 <input type="text" id="ename" name="email" placeholder="Email">
                 </div>
                 <div class="contact_section_message">
                 <textarea id="message" name="subject" placeholder="Message" style="height:170px"></textarea>
-                </div>
+            </div>
+            <div>
+                &nbsp; &nbsp;
+            </div>
                 <input type="submit" value="Submit">
             </form>
-        </div>
+    </div>
     </div>
 
+<footer >
+    <div class="footer-content">
+    <h3>Lambton Consultancy</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec luctus mauris. Cras sodales eros sit amet sem
+    suscipit venenatis. Curabitur convallis, sem non aliquam venenatis, odio metus luctus metus, eget ultricies nisl elit
+    vitae lacus.</p>
+    </div>
+    <ul class="footer-socials">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+    </ul>
+   
+</footer>
+</main>
 
-</section>
+
 </body>
 
 </html>

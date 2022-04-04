@@ -9,9 +9,9 @@ body {
 section {
   height: 100vh;
   width: 100%;
-  padding: 3rem 4rem;
   box-sizing: border-box;
 }
+
 .logo {
   width: 40px;
   max-height: 40px;
@@ -179,7 +179,7 @@ h6 {
 .services {
   font-size: 1.1em;
   font-family: "Product Sans", sans-serif;
-
+  line-height: 1.6;
   height: auto;
   padding: 2%;
 }
@@ -233,7 +233,7 @@ h6 {
 .about_us article {
   margin: auto;
   width: 30%;
-
+  line-height: 1.6;
   background-color: white;
   margin: 1.5em;
   text-align: center;
@@ -384,11 +384,6 @@ social p {
   color: white;
 }
 
-.fa-facebook {
-  background: #3b5998;
-  color: white;
-}
-
 #contact_img {
   max-width: 20%;
   height: auto;
@@ -423,13 +418,15 @@ social p {
   display: flex;
   flex-direction: row;
 }
-.contact_section_email {
+.email-message {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
+
 .contact_section_message {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
 }
 
 input[type="text"],
@@ -463,24 +460,54 @@ input[type="submit"]:hover {
 }
 footer {
   display: block;
-  background-color: #323232;
+  background-color: #212121;
   text-align: center;
   padding: 1%;
-  border-radius: 5px;
-  margin: 0.5%;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  height: 20%;
+  height: auto;
 }
-.footer_text span {
-  color: gray;
-}
-.footer_text {
-  margin-bottom: 1rem;
-  line-height: 1.7em;
-  font-size: 1em;
-  color: #eceff1;
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
-  text-transform: none;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #fff;
+}
+.footer-socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.footer-socials li {
+  margin: 0 10px;
+}
+
+.footer-socials a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+  border-radius: 10%;
+}
+
+.footer-socials a i {
+  font-size: 1.1rem;
+  width: 30px 30px;
+  transition: color 0.4s ease;
+}
+
+.footer-socials a:hover i {
+  color: #616161;
 }
 
 ol.contributors_list li {
@@ -568,14 +595,6 @@ ol.contributors_list li a:hover {
     padding-top: 10%;
   }
 
-  article {
-    width: 40%;
-  }
-
-  #contact_img {
-    max-width: 20%;
-    height: auto;
-  }
   .contact_section {
     padding: 20px;
     margin: auto;
@@ -589,14 +608,16 @@ ol.contributors_list li a:hover {
   .fname-lname {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
+
   input[type="text"],
   select,
   textarea {
     width: 80%;
   }
   input[type="submit"] {
-    width: 100%;
+    width: 60%;
   }
   ul.header-menu li {
     font-size: small;
@@ -649,7 +670,7 @@ ol.contributors_list li a:hover {
     width: 50%;
   }
   .services {
-    font-size: 1em;
+    font-size: 0.8em;
   }
   .services h3 {
     font-size: 1.8em;
@@ -663,13 +684,15 @@ ol.contributors_list li a:hover {
 
     font-weight: bold;
   }
-  article {
-    width: 100%;
-  }
 
   .contact_section {
+    width: max-content;
     margin: auto;
     text-align: center;
+    font-size: 0.8em;
+  }
+  .contact_section h3 {
+    font-size: 1.8em;
   }
   .contact_social {
     display: flex;
@@ -686,7 +709,7 @@ ol.contributors_list li a:hover {
     width: 80%;
   }
   input[type="submit"] {
-    width: 100%;
+    width: 80%;
   }
   ol.contributors_list {
     column-count: 1;

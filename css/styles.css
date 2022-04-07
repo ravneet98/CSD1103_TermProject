@@ -179,20 +179,21 @@ h6 {
 .services {
   font-size: 1.1em;
   font-family: "Product Sans", sans-serif;
-
   height: auto;
   padding: 2%;
+  margin-right:100px;
 }
 .services h3 {
   font-size: 2em;
   color: #212121;
   text-align: center;
-  margin-bottom: 0;
+  margin-left:50px;
+  margin-bottom:auto;
 }
-.services article {
-  margin: auto;
+.services article{
+  margin:20px;
   width: 30%;
-
+  float:right;
   background-color: white;
   margin: 1.5em;
   text-align: center;
@@ -205,15 +206,13 @@ h6 {
   box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.1);
 }
 .services_inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content:center;
 }
+
 
 .inner_text {
   font-size: 1rem;
   color: grey;
-
   font-weight: bold;
 }
 

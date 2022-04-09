@@ -183,6 +183,32 @@ h6 {
   height: auto;
   padding: 2%;
 }
+.services_icons{
+  display: flex;
+  flex-direction: row;
+ justify-content: space-around;
+}
+
+.fa-android{
+  background-color: #81C784;
+  color: white;
+}
+.fa-html5{
+  background-color: #1E88E5;
+  color: white;
+}
+.fa-css3 {
+  background-color: #FF5722;
+  color: white;
+}
+.fa-gamepad {
+  background-color: #009688;
+  color: white;
+}
+.fa-laptop {
+  background-color: #607D8B;
+  color: white;
+}
 .services h3 {
   font-size: 2em;
   color: #212121;
@@ -191,13 +217,12 @@ h6 {
 }
 .services article {
   margin: auto;
-  width: 30%;
-
+  width: 50%;
   background-color: white;
   margin: 1.5em;
   text-align: center;
   border-radius: 25px;
-  padding: 50px;
+  padding: 80px;
   transition: all 0.5s ease;
   border-color: #f1f1f1;
   border-style: solid;
@@ -398,7 +423,7 @@ social p {
   border-style: solid;
   border-width: 5px;
   box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 25px;
 }
 
 .contact_section a:link {
@@ -465,6 +490,7 @@ footer {
   padding: 1%;
   height: 20%;
   height: auto;
+  margin-top: 10%;
 }
 
 .footer-content {
@@ -580,6 +606,12 @@ ol.contributors_list li a:hover {
   .about_us article {
     width: 50%;
   }
+  .services_icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5%;
+  }
   .services {
     font-size: 1em;
   }
@@ -678,12 +710,19 @@ ol.contributors_list li a:hover {
   .services article {
     width: 50%;
   }
+  .services_icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+ 
   .inner_text {
     font-size: 0.8rem;
     color: grey;
 
     font-weight: bold;
   }
+ 
 
   .contact_section {
     width: max-content;
@@ -717,5 +756,13 @@ ol.contributors_list li a:hover {
   .contributors h3 {
     font-size: 1.5em;
     line-height: 1.2em;
+  }
+  .fa {
+    font-size: small !important;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    border-radius: 5px;
   }
 }

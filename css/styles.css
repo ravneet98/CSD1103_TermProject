@@ -111,7 +111,7 @@ h6 {
 }
 .banner_name {
   font-size: 2em;
-  color: #616161;
+  color: #424242;
   margin-top: 8px;
   text-align: center;
 }
@@ -242,7 +242,7 @@ background-size: cover;
 }
 
 .inner_text {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: grey;
 
   font-weight: bold;
@@ -288,6 +288,13 @@ background-size: cover;
   flex-wrap: wrap;
   justify-content: center;
 }
+.about_text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #212121;
+
+
+}
 
 .contributors {
   font-size: 1.1em;
@@ -327,6 +334,7 @@ article:hover {
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 .member_img {
   border-radius: 50%;
@@ -491,7 +499,7 @@ input[type="submit"] {
   padding: 12px 20px;
   border: none;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 5px;
   font-size: medium;
   font-weight: bolder;
   font-family: "Product Sans", sans-serif;
@@ -594,8 +602,9 @@ ol.contributors_list li a:hover {
     width: 30%;
   }
   .about_text {
-    font-size: small;
+    font-size: 1rem;
     font-weight: bold;
+   
   
   }
   article {
@@ -699,7 +708,7 @@ ol.contributors_list li a:hover {
 
   .banner_name {
     font-size: 2em;
-    color: #616161;
+    
   }
   .logo {
     display: none;

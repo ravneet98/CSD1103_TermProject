@@ -1,7 +1,7 @@
 .section {
     width: 100%;
     min-height: 100vh;
-    background-color: #fff;
+  
     margin-top: 5%;
 }
 
@@ -10,11 +10,13 @@
     display: block;
     margin: auto;
     padding-top: 100px;
+    
 }
 
 .content-section {
     float: left;
     width: 55%;
+    
 }
 
 .image-section {
@@ -25,6 +27,7 @@
 .image-section img {
     width: 100%;
     height: auto;
+    border-radius: 400px;
 }
 
 .content-section .title {
@@ -32,10 +35,10 @@
     font-size: 28px;
 }
 
-.content-section .content h3 {
+.content-section .content h1 {
     margin-top: 20px;
     color: #212121;
-    font-size: 21px;
+   font-size: 3rem;
 }
 
 .content-section .content p {
@@ -47,6 +50,7 @@
 
 .content-section .content .button {
     margin-top: 30px;
+    
 }
 
 .content-section .content .button a {
@@ -56,11 +60,12 @@
     color: #fff;
     font-size: 25px;
     letter-spacing: 1.5px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
 }
 
 .content-section .content .button a:hover {
-    background-color: #a52a2a;
-    color: #fff;
+  background-color: #212121;
 }
 
 .content-section .social {
@@ -95,6 +100,7 @@
     .image-section {
         float: none;
         width: 100%;
+      
 
     }
 
@@ -103,6 +109,7 @@
         height: auto;
         display: block;
         margin: auto;
+        
     }
 
     .content-section .title {
@@ -122,4 +129,78 @@
         text-align: center;
     }
 
+}
+.about_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.about_inner article {
+    width: 25%;
+    background-color: white;
+    margin: 0.55em;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 0;
+    transition: all 0.5s ease;
+    border-color: #f1f1f1;
+    border-width: 5px;
+   
+}
+.about_inner p{
+    font-size: 1rem;
+}
+
+
+.about_inner article a {
+    text-decoration: none;
+}
+
+.about_inner .inner_text {
+    color: #212121;
+}
+
+
+
+
+.about_inner span{
+    font-size: 0.8rem;
+    color: #626262;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 1023px) and (max-width: 1056px) {
+    .career_inner article {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+    .about_inner article {
+        width: 45%;
+    }
+
+   
+}
+
+@media screen and (min-width: 480px) and (max-width: 900px) {
+    .about_inner article {
+        width: 30%;
+    }
+
+    .about_banner_heading {
+        padding-top: 35%;
+    }
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .about_inner article {
+        width: 30%;
+    }
+
+    .about_banner_heading {
+        padding-top: 35%;
+    }
 }

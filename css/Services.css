@@ -1,0 +1,104 @@
+ .servicespage {
+    font-size: 1.1em;
+    font-family: "Product Sans", sans-serif;
+    height: auto;
+    padding: 2%;
+    margin-right:100px;
+    flex: auto;
+  }
+  .servicespage h2{
+    font-size: 60px;
+    color: #12a9e0;
+    text-align: center;
+    margin-top: 80px;
+    margin-left:90px;
+  }
+  .servicespage article{
+    margin:20px;
+    width: 30%;
+    float: right;
+    margin-left:35px;
+    background-color: white;
+    margin: 1.5em;
+    text-align: center;
+    border-radius: 25px;
+    padding: 50px;
+    transition: all 0.5s ease;
+    border-color: #009688;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  .services_inner {
+    justify-content:center;
+    float:right;
+  }
+  footer{
+    display: block;
+    background-color: #212121;
+    text-align: center;
+    padding: 1%;
+    position:sticky;
+  }
+  
+  .footer-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-content h3{
+      align-items: center;
+      text-align: center;
+  }
+  .footer-socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+  
+  .footer-socials li {
+    margin: 0 10px;
+  }
+  
+  .footer-socials a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10%;
+  }
+  
+  .footer-socials a i {
+    font-size: 1.1rem;
+    width: 30px 30px;
+    transition: color 0.4s ease;
+  }
+  
+  .footer-socials a:hover i {
+    color: #616161;
+  }
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 1023px) and (max-width: 1056px) {
+    .servicespage article{width: 45%;}
+  }
+  @media screen and (min-width: 900px) and (max-width: 1024px) {
+    .servicespage article{width: 45%;}
+    }
+  
+  @media screen and (min-width: 480px) and (max-width: 900px) {
+      .servicespage article{width: 80%;}
+    }
+  
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .servicespage article{width: 100%;}
+    }

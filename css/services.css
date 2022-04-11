@@ -1,0 +1,106 @@
+.servicespage {
+    font-size: 1.1em;
+    height: auto;
+    padding: 2%;
+    flex: auto;
+  }
+  .services_main{
+    height:auto;
+    padding: 5rem 2rem 0 2rem;
+    background-color: #fff;
+    margin: 30px 10px;
+    width: auto;
+  }
+  .services_banner{
+    background-image: url(../images/Servicesbanner1.jpg);
+    background-size: cover;
+    width: 100%;
+    text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+    min-height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .services_banner_heading{
+    font-size: 3em;
+      color: #212121;
+      font-weight: 800;
+    text-align: center;
+      padding-top: 20%;
+      text-transform: uppercase;
+  }
+  
+  .services_banner_paragraph{
+    font-size: 1.5em;
+      color: #616161;
+      margin-top: 8px;
+      text-align: center;
+  }
+  .servicespage h2{
+        font-size: 60px;
+        color: #212121;
+        text-align: center;
+        padding-bottom: 5px;
+        margin: 30px 0 0px 0;
+        text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+    }
+    .servicespage h3{
+        font-size: 40px;
+        color: #212121;
+        text-align: center;
+        padding-bottom: 5px;
+        margin: 30px 0 0px 0;
+        text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+    }
+    .servicespage h3:hover{
+        text-decoration: #616161;
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+  .servicespage article{
+    width: 30%;
+    height:30%;
+    background-color: white;
+    margin: 0.5em;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-color:#f1f1f1;   
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  .servicespage article p{
+    color: #212121;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 16px; ;
+  }
+  .services_inner {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 70px 0;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 1023px) and (max-width: 1056px) {
+    .servicespage article{width: 45%;}
+  }
+  @media screen and (min-width: 900px) and (max-width: 1024px) {
+    .servicespage article{width: 45%;}
+    }
+  
+  @media screen and (min-width: 480px) and (max-width: 900px) {
+      .servicespage article{width: 80%;}
+    }
+  
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .servicespage article{width: 100%;}
+    }

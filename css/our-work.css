@@ -118,7 +118,7 @@
         align-items: center;
         box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
         border-radius: 20px;
-        margin: 100px auto 20px;
+        margin: 0px auto 20px;
       }
       
       .carousel-container {
@@ -143,7 +143,7 @@
           background-position: top;
       }
       .carousel div h5 {
-       text-align: left;
+       text-align: center;
        color: black;
        margin-top: 20px;       
       }

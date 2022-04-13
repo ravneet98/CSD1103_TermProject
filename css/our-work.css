@@ -113,7 +113,6 @@
    
     .carousel-wrapper {
         width: 910px;
-        height: 630px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -124,7 +123,6 @@
       
       .carousel-container {
         width: 700px;
-        height: 450px;
         overflow: hidden;
         margin: 0 auto;
       }
@@ -133,27 +131,37 @@
         display: flex;
         width: 2100px;
         animation: sliding 7s infinite;
+        overflow-y: auto;
       }
-      .carousel div {
+      .carousel .image {
+        margin-top: 30px;
         width: 700px;
         height: 450px;
-        background-size: cover;
-        background-position: center;
+        background-size: contain;
+        text-align: center;
+          background-repeat: no-repeat;
+          background-position: top;
       }
+      .carousel div h5 {
+       text-align: left;
+       color: black;
+       margin-top: 20px;       
+      }
+      .carousel div p {
+        word-wrap:break-word;       
+       }
       .carousel:hover {
         animation-play-state: paused;
       }
-      .carousel .image {
-          text-align: center;
-      }
+      
       .carousel .image-one {
-        background-image: url("../images/dopplepress.png");
+        background-image: url("../images/dota2.png");
       }
       .carousel .image-two {
-        background-image: url("../images/bryi.png");
+        background-image: url("../images/tiktik.png");
       }
       .carousel .image-three {
-        background-image: url("../images/ether.png");
+        background-image: url("../images/heroku.png");
       }
       
       @keyframes sliding {
@@ -179,12 +187,12 @@
       @media screen and (max-width: 768px) {
         .carousel-wrapper {
           width: 312px;
-          height: 210px;
+         
         }
       
         .carousel-container {
           width: 240px;
-          height: 150px;
+         
         }
       
         .carousel {
@@ -192,9 +200,13 @@
         }
         .carousel > div {
           width: 240px;
-          height: 150px;
+          
         }
       
+        .carousel .image {
+          width: 100%;
+          height: 200px;
+        }
         @keyframes sliding {
           30% {
             transform: translateX(0);

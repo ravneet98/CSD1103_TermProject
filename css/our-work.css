@@ -1,0 +1,218 @@
+.our-workpage {
+    font-size: 1.1em;
+    height: auto;
+    padding: 2%;
+    flex: auto;
+  }
+  .our-work_main{
+    height:auto;
+    padding: 5rem 2rem 0 2rem;
+    background-color: #fff;
+    margin: 30px 10px;
+    width: auto;
+  }
+  .our-work_banner{
+    background-image: url(../images/our-work-banner.webp);
+    background-size: cover;
+    width: 100%;
+    text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+    min-height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .our-work_banner_heading{
+    font-size: 3em;
+      color: #212121;
+      font-weight: 800;
+    text-align: center;
+      padding-top: 20%;
+      text-transform: uppercase;
+  }
+  
+  .our-work_banner_paragraph{
+    font-size: 1.5em;
+      color: #616161;
+      margin-top: 8px;
+      text-align: center;
+  }
+  .our-workpage h2{
+        font-size: 60px;
+        color: #212121;
+        text-align: center;
+        padding-bottom: 5px;
+        margin: 30px 0 0px 0;
+        text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+    }
+    .our-workpage h3{
+        font-size: 40px;
+        color: #212121;
+        text-align: center;
+        padding-bottom: 5px;
+        margin: 30px 0 0px 0;
+        text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+    }
+    .our-workpage h3:hover{
+        text-decoration: #616161;
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+  .our-workpage article{
+    width: 30%;
+    height:30%;
+    background-color: white;
+    margin: 0.5em;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-color:#f1f1f1;   
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  .our-workpage article p{
+    color: #212121;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 16px; ;
+  }
+  .our-work_inner {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 70px 0;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 1023px) and (max-width: 1056px) {
+    .our-workpage article{width: 45%;}
+  }
+  @media screen and (min-width: 900px) and (max-width: 1024px) {
+    .our-workpage article{width: 45%;}
+    .our-work_banner_heading{padding-top: 35%;}
+    }
+  
+  @media screen and (min-width: 480px) and (max-width: 900px) {
+      .our-workpage article{width: 80%;}
+      .our-work_banner_heading{padding-top: 35%;}
+    }
+  
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .our-workpage article{width: 100%;}
+    .our-work_banner_heading{padding-top: 35%;}
+    }
+
+
+
+   
+    .carousel-wrapper {
+        width: 910px;
+        height: 630px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+        border-radius: 20px;
+        margin: 100px auto 20px;
+      }
+      
+      .carousel-container {
+        width: 700px;
+        height: 450px;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+      
+      .carousel {
+        display: flex;
+        width: 2100px;
+        animation: sliding 7s infinite;
+      }
+      .carousel div {
+        width: 700px;
+        height: 450px;
+        background-size: cover;
+        background-position: center;
+      }
+      .carousel:hover {
+        animation-play-state: paused;
+      }
+      .carousel .image {
+          text-align: center;
+      }
+      .carousel .image-one {
+        background-image: url("../images/dopplepress.png");
+      }
+      .carousel .image-two {
+        background-image: url("../images/bryi.png");
+      }
+      .carousel .image-three {
+        background-image: url("../images/ether.png");
+      }
+      
+      @keyframes sliding {
+        30% {
+          transform: translateX(0);
+        }
+        35% {
+          transform: translateX(-700px);
+        }
+        65% {
+          transform: translateX(-700px);
+        }
+        70% {
+          transform: translateX(-1400px);
+        }
+        98% {
+          transform: translateX(-1400px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .carousel-wrapper {
+          width: 312px;
+          height: 210px;
+        }
+      
+        .carousel-container {
+          width: 240px;
+          height: 150px;
+        }
+      
+        .carousel {
+          width: 720px;
+        }
+        .carousel > div {
+          width: 240px;
+          height: 150px;
+        }
+      
+        @keyframes sliding {
+          30% {
+            transform: translateX(0);
+          }
+          35% {
+            transform: translateX(-240px);
+          }
+          65% {
+            transform: translateX(-240px);
+          }
+          70% {
+            transform: translateX(-480px);
+          }
+          98% {
+            transform: translateX(-480px);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+      }

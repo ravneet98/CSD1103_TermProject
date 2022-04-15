@@ -291,7 +291,7 @@ background-size: cover;
 .about_text {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #212121;
+  color: #424242;
 
 
 }
@@ -810,5 +810,852 @@ ol.contributors_list li a:hover {
     text-decoration: none;
     transition: all 0.5s ease;
     border-radius: 5px;
+  }
+}
+
+
+/* about us */
+.section_about {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 5%;
+  background-image: url('../images/pattern-l.svg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section_dev h3 {
+  font-size: 40px;
+  color: #212121;
+  text-align: center;
+  padding-bottom: 5px;
+  margin: 30px 0 0px 0;
+  text-shadow: 0px 4px 3px rgb(0 0 0 / 40%),
+    0px 8px 13px rgb(0 0 0 / 10%),
+    0px 18px 23px rgb(0 0 0 / 10%);
+}
+
+.container {
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+
+}
+
+.content-section {
+  float: left;
+  width: 55%;
+
+}
+
+.image-section {
+  float: right;
+  width: 40%;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 400px;
+}
+
+.content-section .title {
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #212121;
+}
+
+.content-section .content h1 {
+  margin-top: 20px;
+  color: #212121;
+  font-size: 3rem;
+}
+
+.content-section .content p {
+  margin-top: 10px;
+
+  font-size: large;
+  line-height: 1.5;
+  color: #424242;
+}
+
+.content-section .content .button {
+  margin-top: 30px;
+
+}
+
+.content-section .content .button a {
+  background-color: #424242;
+  padding: 12px 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.content-section .content .button a:hover {
+  background-color: #212121;
+}
+
+.content-section .social {
+  margin: 40px 40px;
+}
+
+.content-section .social i {
+  color: #a52a2a;
+  font-size: 30px;
+  padding: 0px 10px;
+}
+
+.content-section .social i:hover {
+  color: #3d3d3d;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  .content-section {
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  .section_dev h3 {
+    font-size: 25px;
+
+  }
+
+  .image-section {
+    float: none;
+    width: 100%;
+
+
+  }
+
+  .image-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+
+  }
+
+  .content-section .title {
+    text-align: center;
+    font-size: 19px;
+  }
+
+  .content-section .content .button {
+    text-align: center;
+  }
+
+  .content-section .content .button a {
+    padding: 9px 30px;
+  }
+
+  .content-section .social {
+    text-align: center;
+  }
+
+}
+
+.about_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+
+.about_inner article {
+  width: 25%;
+  background-color: white;
+  margin: 0.55em;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px 0;
+  transition: all 0.5s ease;
+  border-color: #f1f1f1;
+  border-width: 5px;
+
+}
+
+.about_inner p {
+  font-size: 1rem;
+}
+
+
+.about_inner article a {
+  text-decoration: none;
+}
+
+.about_inner .inner_text {
+  color: #212121;
+}
+
+
+
+
+.about_inner span {
+  font-size: 0.8rem;
+  color: #626262;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 1023px) and (max-width: 1056px) {
+  .career_inner article {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  .about_inner article {
+    width: 45%;
+  }
+
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 900px) {
+  .about_inner article {
+    width: 30%;
+  }
+
+  .about_banner_heading {
+    padding-top: 35%;
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .about_inner article {
+    width: 30%;
+  }
+
+  .about_banner_heading {
+    padding-top: 35%;
+  }
+}
+
+
+
+/*Services*/
+.servicespage {
+  font-size: 1.1em;
+  height: auto;
+  padding: 2%;
+  flex: auto;
+
+}
+
+.services_main {
+  height: auto;
+  padding: 5rem 2rem 0 2rem;
+  background-color: #fff;
+  margin: 30px 10px;
+  width: auto;
+
+}
+
+.services_banner {
+  background-image: url(../images/services.jpg);
+  background-size: cover;
+  width: 100%;
+  text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+  min-height: 900px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.services_banner_heading {
+  font-size: 3em;
+  color: #212121;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 20%;
+  text-transform: uppercase;
+}
+
+.services_banner_paragraph {
+  font-size: 1.5em;
+  color: #616161;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.servicespage h2 {
+  font-size: 60px;
+  color: #212121;
+  text-align: center;
+  padding-bottom: 5px;
+  margin: 30px 0 0px 0;
+  text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+}
+
+.servicespage h3 {
+  font-size: 40px;
+  color: #212121;
+  text-align: center;
+  padding-bottom: 5px;
+  margin: 30px 0 0px 0;
+  text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+}
+
+.servicespage article {
+  width: 30%;
+  height: 30%;
+  background-color: white;
+  margin: 0.5em;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+  transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-color: #f1f1f1;
+  border-style: solid;
+  border-width: 5px;
+  box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.servicespage article p {
+  color: #212121;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0 16px;
+  ;
+}
+
+.services_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 70px 0;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 1023px) and (max-width: 1056px) {
+  .servicespage article {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  .servicespage article {
+    width: 45%;
+  }
+
+  .services_banner_heading {
+    padding-top: 35%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 900px) {
+  .servicespage article {
+    width: 80%;
+  }
+
+  .services_banner_heading {
+    padding-top: 35%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .servicespage article {
+    width: 100%;
+  }
+
+  .services_banner_heading {
+    padding-top: 35%;
+  }
+}
+
+
+
+/* Career */
+
+.career_banner {
+  background-image: url(../images/inner-banner.jpg);
+  background-size: cover;
+  width: 100%;
+  text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+  min-height: 900px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.career_banner_heading {
+  font-size: 4em;
+  color: #212121;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 20%;
+  text-transform: uppercase;
+}
+
+.career_banner_para {
+  font-size: 2em;
+  color: #616161;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.career_banner .view_services {
+  margin: 1% 44%;
+}
+
+section.career_main {
+  height: auto;
+  padding: 5rem 2rem 0 2rem;
+  background-color: #fff;
+  margin: 60px 10px;
+  width: auto;
+}
+
+.career_main h2 {
+  font-size: 60px;
+  color: #212121;
+  text-align: center;
+  padding-bottom: 5px;
+  margin: 30px 0 0px 0;
+  text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+}
+
+.career_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 70px 0;
+}
+
+.career_inner article {
+  width: 30%;
+  background-color: white;
+  margin: 0.55em;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px 0;
+  transition: all 0.5s ease;
+  border-color: #f1f1f1;
+  border-width: 5px;
+  margin-left: 16px;
+}
+
+.career_inner_text {
+  text-align: center;
+  margin: auto;
+  padding: 1px 20px 50px 20px;
+  max-width: 850px;
+  background: white;
+  text-align: center;
+  box-shadow: 0 10px 50px -15px rgb(52 53 72 / 50%);
+  transition: transform .4s ease-out, box-shadow .4s ease-out;
+  border-radius: 10px;
+}
+
+.career_inner article a {
+  text-decoration: none;
+}
+
+.career_inner .inner_text {
+  color: #212121;
+}
+
+.career_inner_text p {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.career_name {
+  color: #424242;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.career_category {
+  color: #212121;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0 16px;
+}
+
+.career_location {
+  margin-top: 12px;
+  margin-bottom: 5px;
+  color: #626262;
+}
+
+.career_location .fa:hover {
+  box-shadow: none;
+}
+
+.fa-wordpress {
+  background: #21759b;
+  color: #fff;
+}
+
+.fa-database {
+  background-color: #607D8B;
+  color: white;
+}
+
+.fa-map-marker {
+  border-radius: 50%;
+  color: #fff;
+  background: #424242;
+  width: 22px;
+  height: 22px;
+  opacity: 0.4;
+  margin-right: 8px;
+}
+
+.contact_section.career_form {
+  background-color: #fff;
+  background-image: none
+}
+
+input[type="email"] {
+  padding: 10px;
+  border: 5px solid #ccc;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  resize: vertical;
+  font-family: "Product Sans", sans-serif;
+  width: 80%;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 1023px) and (max-width: 1056px) {
+  .career_inner article {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  .career_inner article {
+    width: 45%;
+  }
+
+  .career_banner_heading {
+    padding-top: 35%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 900px) {
+  .career_inner article {
+    width: 80%;
+  }
+
+  .career_banner_heading {
+    padding-top: 35%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .career_inner article {
+    width: 100%;
+  }
+
+  .career_banner_heading {
+    padding-top: 35%;
+  }
+}
+
+
+/*Our Work*/
+.our-workpage {
+  font-size: 1.1em;
+  height: auto;
+  padding: 2%;
+  flex: auto;
+
+}
+
+.our-work_main {
+  height: auto;
+  padding: 5rem 2rem 0 2rem;
+  background-color: #fff;
+  margin: 30px 10px;
+  width: auto;
+}
+
+.our-work_banner {
+  background-image: url(../images/our-work.jpg);
+  background-size: cover;
+  width: 100%;
+  text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+  min-height: 900px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.our-work_banner_heading {
+  font-size: 3em;
+  color: #212121;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 20%;
+  text-transform: uppercase;
+}
+
+.our-work_banner_paragraph {
+  font-size: 1.5em;
+  color: #616161;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.our-workpage h2 {
+  font-size: 60px;
+  color: #212121;
+  text-align: center;
+  padding-bottom: 5px;
+  margin: 30px 0 0px 0;
+  text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+}
+
+.our-workpage h3 {
+  font-size: 40px;
+  color: #212121;
+  text-align: center;
+  padding-bottom: 5px;
+  margin: 30px 0 0px 0;
+  text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+}
+
+.our-workpage article {
+  width: 30%;
+  height: 30%;
+  background-color: white;
+  margin: 0.5em;
+  text-align: center;
+  border-radius: 10px;
+
+  padding: 30px;
+  transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-color: #f1f1f1;
+  border-style: solid;
+  border-width: 5px;
+  box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.1);
+
+}
+
+.our-workpage article p {
+  color: #212121;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0 16px;
+  ;
+}
+
+.our-work_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 70px 0;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 1023px) and (max-width: 1056px) {
+  .our-workpage article {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  .our-workpage article {
+    width: 45%;
+  }
+
+  .our-work_banner_heading {
+    padding-top: 35%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 900px) {
+  .our-workpage article {
+    width: 80%;
+  }
+
+  .our-work_banner_heading {
+    padding-top: 35%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .our-workpage article {
+    width: 100%;
+  }
+
+  .our-work_banner_heading {
+    padding-top: 35%;
+  }
+}
+
+
+
+
+.carousel-wrapper {
+  width: 910px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+  border-radius: 20px;
+  margin: 0px auto 20px;
+  border-color: #f1f1f1;
+  border-style: solid;
+  border-width: 5px;
+  
+
+}
+
+.carousel-container {
+  width: 700px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  width: 2100px;
+  animation: sliding 7s infinite;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.carousel .image {
+  margin-top: 30px;
+  width: 700px;
+  height: 450px;
+  background-size: contain;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.carousel div h5 {
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+}
+
+.carousel div p {
+  word-wrap: break-word;
+}
+
+.carousel:hover {
+  animation-play-state: paused;
+}
+
+.carousel .image-one {
+  background-image: url("../images/dota2.png");
+}
+
+.carousel .image-two {
+  background-image: url("../images/tiktik.png");
+}
+
+.carousel .image-three {
+  background-image: url("../images/heroku.png");
+}
+
+@keyframes sliding {
+  30% {
+    transform: translateX(0);
+  }
+
+  35% {
+    transform: translateX(-700px);
+  }
+
+  65% {
+    transform: translateX(-700px);
+  }
+
+  70% {
+    transform: translateX(-1400px);
+  }
+
+  98% {
+    transform: translateX(-1400px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-wrapper {
+    width: 312px;
+
+  }
+
+  .carousel-container {
+    width: 240px;
+
+  }
+
+  .carousel {
+    width: 720px;
+  }
+
+  .carousel>div {
+    width: 240px;
+
+  }
+
+  .carousel .image {
+    width: 100%;
+    height: 200px;
+  }
+
+  @keyframes sliding {
+    30% {
+      transform: translateX(0);
+    }
+
+    35% {
+      transform: translateX(-240px);
+    }
+
+    65% {
+      transform: translateX(-240px);
+    }
+
+    70% {
+      transform: translateX(-480px);
+    }
+
+    98% {
+      transform: translateX(-480px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
   }
 }
